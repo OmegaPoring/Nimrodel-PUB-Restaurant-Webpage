@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" integrity="sha384-
  UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Assets\style.css">
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +35,7 @@
                     <a class="nav-link active" aria-current="page" href="#Destacados">Nuestros Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="#" >Sobre Nosotros</a>
+                    <a class="nav-link" href="#" id="sobre_nosotros">Sobre Nosotros</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#Comuniquemonos" onclick="mostrar_com()">Comuniquemonos</a>
@@ -66,8 +66,8 @@
                 </div>
 
                 <div class="contenido card container-lg container-xs" id="contenido_beb_hid" style="display: none;">
-                  <h3>GASEOSAS</h3>
-                  <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab vel similique voluptates dolorum, fugit incidunt
+                    <h3>GASEOSAS</h3>
+                    <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab vel similique voluptates dolorum, fugit incidunt
                       accusamus explicabo veniam maxime et quasi. Sit fuga amet eligendi? Saepe labore veritatis reiciendis!
                       Ipsum.</p>
                   <img src="MATERIAL COMPLEMENTARIO\bebidas.jpg" alt="">
@@ -104,6 +104,50 @@
                       veritatis.</p>
                   <img src="MATERIAL COMPLEMENTARIO\shop.jpeg" alt="">
                 </div>
+                
+                <div id="carousel_sobnos" class="carousel slide card" data-bs-ride="carousel" style="display: none;">
+                  <!-- Indicadores -->
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#carousel_sobnos" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carousel_sobnos" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carousel_sobnos" data-bs-slide-to="2"></li>
+                  </ol>
+                
+                  <!-- Imágenes -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <h3>Nimrodel PUB Restaurant</h3>
+                      <p>Nimrodel Significa “dama de la cueva blanca”. Fue una elfa silvana que vivió 
+                        durante la Tercera Edad del Sol en el bosque de Lothlórien. En honor a su nombre, se acuña 
+                        Nimrodel al río que nace en las Montañas Nubladas</p>
+                      <img src="MATERIAL COMPLEMENTARIO\IMG2.jpg" class="d-block" alt="Imagen 1" height="294px" width="385px" style="margin: auto;">
+                    </div>
+                    <div class="carousel-item">
+                      <p>Nimrodel Pub Restaurant es un oasis de calma y diversión, lleno de rincones acogedores 
+                        en donde se resalta la belleza de su decoración élfica. 
+                        Es un lugar ideal para visitar solo o acompañado, disfrutar una tarde con amigos, terminar 
+                        el día después del trabajo o almorzar con tu familia. 
+                        Puedes probar nuestras tradicionales tablas, en todas sus variedades y que nos han 
+                        otorgado reconocimiento dentro de la cultura gastronómica. 
+                        También puedes disfrutar nuestras cervezas de fabricación propia, con sabores que te 
+                        llevarán a un mágico mundo.
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="MATERIAL COMPLEMENTARIO\IMG1.jpg" class="d-block" alt="Imagen 3" width="366px" height="491px" style="margin: auto;">
+                    </div>
+                  </div>
+                
+                  <!-- Controles -->
+                  <a class="carousel-control-next" href="#carousel_sobnos" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </a>
+                  <a class="carousel-control-prev" href="#carousel_sobnos" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </a>
+                </div>  
 
                 <div id="fondo_pop" style="display: none;"></div>
         </div>

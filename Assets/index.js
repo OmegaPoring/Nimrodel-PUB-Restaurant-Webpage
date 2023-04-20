@@ -45,10 +45,18 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
+    $("#sobre_nosotros").click(function(accion){
+        $("#carousel_sobnos").show();
+        $("#fondo_pop").show();
+    })
+})
+
+$(document).ready(function(){
     $("#fondo_pop").click(function(accion){
         $("#contenido_beb_hid").hide();
         $("#contenido_tab_hid").hide();
         $("#contenido_schop_hid").hide();
+        $("#carousel_sobnos").hide();
         $("#fondo_pop").hide();
     })
 })
